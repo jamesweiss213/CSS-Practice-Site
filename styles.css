@@ -1,0 +1,240 @@
+body{
+    margin:0;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    color:#40514E;
+}
+
+h1{
+    margin:50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size:5.625rem;
+    color:#66BFBF;
+    line-height:2;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.5rem;
+    color:#66BFBF;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E
+}
+
+hr{
+    border: dotted;
+    width:4%;
+    color:grey;
+    opacity:50%;
+    size:100px;
+    border-bottom:none;
+    border-width: 5px;
+    margin: 100px auto;
+}*/
+
+
+/*hr{
+    color:grey;
+    border: dotted;
+    height:0%;
+    width: 5%;
+    border-width: 5px;
+    border-bottom:0;
+}*/
+
+a{
+    color:#11999E;
+}
+
+p{
+    color:#40514E;
+}
+
+/*******************************************Classes***************************************************/
+
+.bottom-cloud{
+    position:absolute;
+    left:300px;
+    bottom:300px;
+}
+.bottom-container{
+    background-color:#66BFBF;
+    margin-bottom:-10px;
+    padding: 50px 0 20px;
+}
+.btn{
+    margin:2.5rem 0;
+    color:white;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    text-decoration:none;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.chilli-img {
+    width:25%;
+    float:left;
+    margin-right: 1.875rem;
+}
+.code-img{
+    width:25%;
+    float:right;
+    margin-left: 1.875rem;
+}
+.contact-me{
+    padding-bottom:5rem;
+}
+.contact-message{
+    width:40%;
+    margin:2.5rem auto 3.75rem;
+}
+.copyright{
+    color:#EAF6F6;
+    font-size: 0.75em;
+    margin:50px 0 -10px 0;
+    padding:20px 0;
+}
+.footer-link{
+    color: #11999e;
+    font-family:'Montserrat', sans-serif;
+    margin:10px 20px;
+    text-decoration:none;
+    font-weight:600;
+}
+.footer-link:hover{
+    color:#EAF6F6
+}
+.intro{
+    width:30%;
+    margin:auto;
+}
+.middle-container{
+    padding:100px 0;
+}
+.mountain{
+    position:relative;
+    top:4px;
+}
+.prof-pic{
+    height:200px;
+    width:200px;
+    margin-top:2.5rem;
+}
+
+
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align:left;
+    line-height:2;
+}
+
+.top-cloud{
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+.top-container{
+    background-color:#E4F9F5;
+    position:relative;
+    padding-top:100px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  
+
+~clear and float are basically contrasting.
+
+If you have an img floating left to have the text wrap around it, you can set a class to a piece of text
+and you can have the text stop wrapping about the floating img that would otherwise make it wrap.
+
+~em and % are inherited from the parent
+
+if you body tag has a font-size of 200%, that gets added on to your child tags like div or h1
+
+b{
+    font-size:200%
+}
+h1{
+    font-size:5em
+}
+
+After this, h1's font-size will be 700% or 5em. 1em=100%, and this is addition in this case. That's why
+you need to be careful about your application of font-sizes that are variable like em and %
+
+UNLESS you use rem which means root-em which essentially tells the child to ignore the parent em or %
+and set its own em AS if it were the root.
+
+
+font-size:100% is 16px. 90px is 90/16= 562.5%
+1em = 16px = 100%
+90px = 5.625em
+______________________________________________________________
+!margin: Top Right Bottom Left (clockwise circle);
+ margin: X; = margin: X X X X;
+ margin: X Y; = margin: X Y X Y; [X on top/bottom, Y on left/right
+ margin: X Y Z; margin: X Y Z Y; [X on top, Y on left and right, Z on bottom]
+ margin: X Y Z T; margin: X Y Z T; [X on top, Y on the right, Z on the bottom, T on the left] 
+ body{
+  margin:0px;
+}
+.container {
+  position:relative;
+  height:300px;
+  width:300px;
+  background-color:grey;
+}
+.red{
+  height:100px;
+  width:100px;
+  position:absolute;
+  background-color:red;
+  left: 100px;
+  
+}
+.blue{
+  height:100px;
+  width:100px;
+  position:absolute;
+  background-color:blue;
+  left:200px;
+  
+}
+.yellow{
+  height:100px;
+  width:100px;
+  position:fixed;
+  background-color:yellow;
+  
+}
+ 
+ */
